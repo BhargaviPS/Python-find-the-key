@@ -1,0 +1,17 @@
+def Doesitmatch(n, arr, key):
+  for i in range(n):
+    if arr[i]== key:
+      return i
+    else:
+      return -1
+
+n = int(input("Give length of array: "))
+arr = []
+for i in range(n):
+ arr.append(int(input(f"Give the {i+1} term of array: ")))
+key = int(input("Give the key: "))
+result = Doesitmatch(n, arr, key)
+if result == -1:
+  print("sorry key not found")
+else:
+  print("key found in result")
